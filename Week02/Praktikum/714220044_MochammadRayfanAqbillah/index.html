@@ -1,88 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf" />
-    <meta name="msapplication-TileColor" content="#0ed3cf" />
-    <meta name="theme-color" content="#0ed3cf" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf">
+    <meta name="msapplication-TileColor" content="#0ed3cf">
+    <meta name="theme-color" content="#0ed3cf">
 
-    <meta
-      property="og:image"
-      content="http://tailwindcomponents.com/storage/8416/conversions/temp41738-ogimage.jpg?v=2023-02-13 07:30:00"
-    />
+    <meta property="og:image" content="http://tailwindcomponents.com/storage/8416/conversions/temp41738-ogimage.jpg?v=2023-02-13 07:30:00" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="640" />
     <meta property="og:image:type" content="image/png" />
 
-    <meta
-      property="og:url"
-      content="https://tailwindcomponents.com/component/multi-line-table/landing"
-    />
+    <meta property="og:url" content="https://tailwindcomponents.com/component/multi-line-table/landing" />
     <meta property="og:title" content="Multi-line Table by lvwzhen" />
-    <meta
-      property="og:description"
-      content="Multi-line Table design made using Tailwind CSS"
-    />
+    <meta property="og:description" content="Multi-line Table design made using Tailwind CSS" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@TwComponents" />
     <meta name="twitter:title" content="Multi-line Table by lvwzhen" />
-    <meta
-      name="twitter:description"
-      content="Multi-line Table design made using Tailwind CSS"
-    />
-    <meta
-      name="twitter:image"
-      content="http://tailwindcomponents.com/storage/8416/conversions/temp41738-ogimage.jpg?v=2023-02-13 07:30:00"
-    />
+    <meta name="twitter:description" content="Multi-line Table design made using Tailwind CSS" />
+    <meta name="twitter:image" content="http://tailwindcomponents.com/storage/8416/conversions/temp41738-ogimage.jpg?v=2023-02-13 07:30:00" />
 
-    <title>Multi-line Table by lvwzhen.</title>
+    <title>Multi-line Table by lvwzhen. </title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-200">
-    <div
-      class="fixed bottom-0 left-0 right-0 z-40 px-4 py-3 text-center text-white bg-gray-800"
-    >
-      This a Multi-line Table by lvwzhen.
-      <a
-        class="text-gray-200 underline"
-        href="https://tailwindcomponents.com/component/multi-line-table"
-        >Component details</a
-      >
+            <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-gray-200">
+    <div class="fixed bottom-0 left-0 right-0 z-40 px-4 py-3 text-center text-white bg-gray-800">
+        This a Multi-line Table by lvwzhen. 
+        <a class="text-gray-200 underline" href="https://tailwindcomponents.com/component/multi-line-table">Component details</a>
     </div>
-    <div
-      class="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5"
-    >
-      <table
-        class="w-full border-collapse bg-white text-left text-sm text-gray-500"
-      >
-        <thead class="bg-gray-50">
-          <tr>
-            <th scope="col" class="px-6 py-4 font-medium text-gray-900">
-              Name
-            </th>
-            <th scope="col" class="px-6 py-4 font-medium text-gray-900">
-              State
-            </th>
-            <th scope="col" class="px-6 py-4 font-medium text-gray-900">
-              Role
-            </th>
-            <th scope="col" class="px-6 py-4 font-medium text-gray-900">
-              Team
-            </th>
-            <th scope="col" class="px-6 py-4 font-medium text-gray-900"></th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-100 border-t border-gray-100">
-          <tr class="hover:bg-gray-50">
+    <div class="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
+  <table class="w-full border-collapse bg-white text-left text-sm text-gray-500">
+    <thead class="bg-gray-50">
+      <tr>
+        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Name</th>
+        <th scope="col" class="px-6 py-4 font-medium text-gray-900">State</th>
+        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Role</th>
+        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Team</th>
+        <th scope="col" class="px-6 py-4 font-medium text-gray-900"></th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-100 border-t border-gray-100" id="inidata">
+        <tr class="hover:bg-gray-50">
             <th class="flex gap-3 px-6 py-4 font-normal text-gray-900">
               <div class="relative h-10 w-10">
                 <img
@@ -90,9 +57,7 @@
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <span
-                  class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"
-                ></span>
+                <span class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"></span>
               </div>
               <div class="text-sm">
                 <div class="font-medium text-gray-700">Steven Jobs</div>
@@ -174,9 +139,7 @@
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <span
-                  class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"
-                ></span>
+                <span class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"></span>
               </div>
               <div class="text-sm">
                 <div class="font-medium text-gray-700">Steven Jobs</div>
@@ -258,9 +221,7 @@
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <span
-                  class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"
-                ></span>
+                <span class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"></span>
               </div>
               <div class="text-sm">
                 <div class="font-medium text-gray-700">Steven Jobs</div>
@@ -342,9 +303,7 @@
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <span
-                  class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"
-                ></span>
+                <span class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"></span>
               </div>
               <div class="text-sm">
                 <div class="font-medium text-gray-700">Steven Jobs</div>
@@ -426,9 +385,7 @@
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <span
-                  class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"
-                ></span>
+                <span class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"></span>
               </div>
               <div class="text-sm">
                 <div class="font-medium text-gray-700">Steven Jobs</div>
@@ -502,12 +459,10 @@
               </div>
             </td>
           </tr>
-        </tbody>
-      </table>
-    </div>
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-  </body>
+    </tbody>    
+  </table>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="fetch.js"></script>
+</body>
 </html>
