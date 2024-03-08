@@ -29,7 +29,7 @@ function tampilkan(result) {
     hasil += "<tr>";
     hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'>" + iniJson[i].text + "</td>";
     hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'>" + iniJson[i].user + "</td>";
-    hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'>" + iniJson[i].status.verified + "</td>";
+    hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'>" + iniJson[i].source + "</td>";
     hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'>" + iniJson[i].type + "</td>";
     hasil += "</tr>";
   }
