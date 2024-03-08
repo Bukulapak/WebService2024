@@ -25,12 +25,26 @@
 4. Buat file fetch.js di dalam folder NPM kalian
 5. Pada aplikasi Postman, pilih menu </> atau code pilih javascript fetch ,kemudian paste pada file fetch.js yang baru dibuat
    ![image](https://user-images.githubusercontent.com/26703717/220873867-a5685abb-3e1b-43ce-a1dc-57a5b3b38065.png)
-6. Kemudian tambahkan kode berikut pada script fetch.js di paling bawah :
+6. Kemudian tambahkan kode berikut pada script fetch.js :
     ```js
-    function tampilkan(result){
-    console.log(result);
-    iniJson = JSON.parse(result);
-    }
+    var myHeaders = new Headers();
+    myHeaders.append("Cookie", "connect.sid=s%3AM6CfLJhCFlu92tNvS7cRegIIcR8rhhUG.AN2Ss3OKnMLlBJEwcDELKykDb293dBuH%2FhX1M3mZI2w");
+    
+    var requestOptions = {
+      method: 'GET',
+      headers: myHeaders,
+      redirect: 'follow'
+    };
+    
+    fetch("https://cat-fact.herokuapp.com/facts", requestOptions)
+      .then(response => response.text())
+      .then(result => tampilkan(result))
+      .catch(error => console.log('error', error));
+    
+    function tampilkan(result) {
+      console.log(result);
+      iniJson = JSON.parse(result);
+    }   
     ```
 7. Buka dengan live server, inspect lihat di console dan hasilnya ditampilkan berupa teks.
 
