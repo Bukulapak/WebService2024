@@ -45,7 +45,6 @@
       console.log(result);
       iniJson = JSON.parse(result);
     }   
-    }
     ```
 7. Buka dengan live server, inspect lihat di console dan hasilnya ditampilkan berupa teks.
 
