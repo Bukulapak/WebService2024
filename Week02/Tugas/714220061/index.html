@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generate Random Anime Things</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-pixel">
+  <audio controls loop id="bgmp3" class="hiddenaudio" autoplay>
+    <source src="https://dl.sndup.net/dsm6/naviabgm.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="bg-black" style="--bs-bg-opacity: .8;">
+    <h4 class="text-center text-white headertext d-block p-2 bg-dark header"><span><img src="https://i.gifer.com/XOsX.gif"
+          alt="" class="headgif"></span>&nbsp;Random Anime Things Generator &nbsp;<span><img
+          src="https://i.gifer.com/45RT.gif" alt="" class="headgif"></span><span id="audioControl"><img
+          class="float-end" style="position: relative; top: 10px; right: 10px;"
+          src="https://i.ibb.co/JB73jMv/unmute.png" alt=""></span></h4><br>
+      <div class="container-md">
+        <br>
+        <p class="text-white"><span><img src="https://freepngimg.com/thumb/anime/10-2-anime-png-images-thumb.png" alt=""
+              class="anilogo"></span> &nbsp;Generate Random Neko Pictures</p>
+        <table class="table table-hover table-striped table-bordered">
+          <caption class="text-white">This data was fetched from https://nekos.best/api/v2</caption>
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Artist</th>
+              <th scope="col">Name</th>
+              <th scope="col">Source</th>
+              <th scope="col">Image</th>
+            </tr>
+          </thead>
+          <tbody id="thisWaifu" style="opacity: 0.7;">
+            <tr>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+            </tr>
+          </tbody>
+        </table>
+        <center>
+          <p class="d-inline-flex gap-1">
+            <a class="btn fw-light text-white" data-bs-toggle="button">Didn't find you're looking for? &nbsp;&nbsp;</a>
+            <button class="btn btn-primary center" onclick="generateNewImg()" type="button">Generate Other</button>
+          </p>
+        </center>
+        <hr class="hr hr-blurry text-white">
+        <br><br>
+        <p class="text-white"><span><img
+              src="https://i.ibb.co/MnbH4ZL/Quote-box-frame-quote-speech-bubble-text-in-quote-on-transparent-background-PNG.png"
+              alt="" class="quotelogo"></span> &nbsp;Generate Random Quotes</p>
+        <table class="table table-hover table-striped table-bordered">
+          <caption class="text-white">This data was fetched from https://animechan.xyz/api</caption>
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Quote</th>
+              <th scope="col">From Anime</th>
+              <th scope="col">Character</th>
+            </tr>
+          </thead>
+          <tbody id="thisQuote" style="opacity: 0.7;">
+            <tr>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+              <td>Nothing</td>
+            </tr>
+          </tbody>
+        </table>
+        <center>
+          <p class="d-inline-flex gap-1">
+            <a class="btn fw-light text-white" data-bs-toggle="button">Didn't find you're looking for? &nbsp;&nbsp;</a>
+            <button class="btn btn-primary center" onclick="generateNewQt()" type="button">Generate Other</button>
+          </p>
+        </center>
+      </div><br>
+  </div>
+  <section>
+    <footer class="text-center text-white" style="background-color: #222222;">
+      <div class="container p-4 pb-0">
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">It's just a small project about using API, visit my github profile here ></span>
+            <a data-mdb-ripple-init type="button" class="btn btn-outline-light btn-rounded"
+              href="https://github.com/hrisz">
+              <span><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" class="githublogo"></span>
+              GitHub
+            </a>
+          </p>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        @ 2024 Not Copyright:
+        <a class="text-white" href="https://youtu.be/dQw4w9WgXcQ">HrisZ</a>
+      </div>
+    </footer>
+  </section>
+  <script src="fetch.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
