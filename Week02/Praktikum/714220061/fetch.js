@@ -11,7 +11,6 @@ var requestOptions = {
 };
 
 hasil = "";
-users = "";
 
 fetch("https://cat-fact.herokuapp.com/facts", requestOptions)
   .then((response) => response.text())
