@@ -37,7 +37,6 @@ function loadImg() {
     .catch((error) => console.error(error));
 }
 
-
 function shoWaifu(result) {
   console.log(result);
   datawf = "";
