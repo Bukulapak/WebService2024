@@ -6,7 +6,6 @@ var requestOptions = {
   headers: myHeaders,
   redirect: 'follow'
 };
-
 hasil = "";
 
 fetch("https://cat-fact.herokuapp.com/facts", requestOptions)
