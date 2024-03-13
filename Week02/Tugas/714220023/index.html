@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Thrones Characters</title>
+
+  <style>
+    /* CSS untuk styling tabel */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    thead {
+      background-color: #f2f2f2;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    /* CSS untuk styling kesalahan */
+    .error-message {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>House</th>
+        <th>Quotes</th>
+      </tr>
+    </thead>
+    <tbody id="data-container"></tbody>
+  </table>
+
+  <script src="./fetch.js"></script>
+
+</body>
+</html>
