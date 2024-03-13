@@ -1,0 +1,45 @@
+@font-face {
+  font-family: gifont;
+  src: url(zh-cn.ttf);
+}
+
+.bg-pixel {
+  background-image: url(https://storage.ko-fi.com/cdn/useruploads/display/818e2ecb-f4f9-4e3d-9d36-2a4106278a68_8-phonepreview.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  z-index: -1;
+}
+
+.headertext {
+  font-family: gifont;
+}
+
+.headgif {
+  width: 50px;
+}
+
+.quotelogo {
+  width: 50px;
+}
+
+.anilogo {
+  width: 40px;
+}
+
+.githublogo {
+  width: 25px;
+}
+
+.nekoimg {
+  width: 100px;
+}
+
+.hiddenaudio {
+  display: none !important;
+}
