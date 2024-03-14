@@ -1,0 +1,118 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf">
+    <meta name="msapplication-TileColor" content="#0ed3cf">
+    <meta name="theme-color" content="#0ed3cf">
+
+    <meta property="og:image" content="http://tailwindcomponents.com/storage/8416/conversions/temp41738-ogimage.jpg?v=2023-02-13 07:30:00" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta property="og:url" content="https://tailwindcomponents.com/component/multi-line-table/landing" />
+    <meta property="og:title" content="Multi-line Table by lvwzhen" />
+    <meta property="og:description" content="Multi-line Table design made using Tailwind CSS" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TwComponents" />
+    <meta name="twitter:title" content="Multi-line Table by lvwzhen" />
+    <meta name="twitter:description" content="Multi-line Table design made using Tailwind CSS" />
+    <meta name="twitter:image" content="http://tailwindcomponents.com/storage/8416/conversions/temp41738-ogimage.jpg?v=2023-02-13 07:30:00" />
+
+    <title>One Piece Anime</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      img {
+        max-width: 100px;
+        height: auto;
+      }
+    </style>
+            <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-gray-200">
+    <div class="fixed bottom-0 left-0 right-0 z-40 px-4 py-3 text-center text-white bg-gray-800">
+        This a Multi-line Table by lvwzhen. 
+        <a class="text-gray-200 underline" href="https://tailwindcomponents.com/component/multi-line-table">Component details</a>
+    </div>
+    <div id="inidata">
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Poster</th>
+              <th>Judul</th>
+              <th>Trailer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data akan ditambahkan di sini -->
+          </tbody>
+        </table>
+      </div>
+<script src="./fetch.js"></script>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
