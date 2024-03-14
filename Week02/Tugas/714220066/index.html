@@ -6,6 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>HeroBuxx - GitHub Profile</title>
     <style>
         body {
@@ -29,6 +30,9 @@
             background-position: 100% 50%;
           }
         }
+        html {
+            scroll-behavior: smooth;
+        }
       </style>
 </head>
 <body>
@@ -37,6 +41,27 @@
 
         </div>  
     </div>
+
+    <div class="w-full h-screen bg-gradient-to-r from-cyan-950 via-teal-750 to-slate-950 background-animate"> 
+      <div id="followers">
+        <div class="h-screen flex items-center justify-center">
+          <div class="bg-zinc-950 py-8 rounded-xl text-white px-8">
+            <h1 class="font-bold px-4 pb-4 text-xl text-center">Followers</h1>
+            <div id="followers-data" class="grid grid-cols-3 gap-4">
+
+            </div>
+            <div class="pt-4">
+              <button class="bg-zinc-800 rounded-full px-3 py-2" id="prevPageBtn" onclick="prevPage()">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="bg-zinc-800 rounded-full px-3 py-2" id="nextPageBtn" onclick="nextPage()">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+      </div>  
+      </div>  
+  </div>
     <script src="fetch.js"></script>
 </body>
 </html>
