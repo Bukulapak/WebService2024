@@ -1,0 +1,24 @@
+body {
+    background-image: url('https://supercell.com/images/1a5b69311180a4a1c374e10556941f05/1681/hero_bg_brawlstars.a385872a.webp');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  p, span, a, li, td {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+
+  .table.mt-3 td{
+    background-color: transparent;
+  }
+  
+  .table.mt-3 th {
+    background-color: transparent;
+  }
