@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yu-Gi-Oh!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   
+    <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+            <p class="navbar-brand mb-0 h1">Yu-Gi-Oh</p>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Yu-Gi-Oh! Card Information</h1>
+        
+        <table class="table">
+            <thead class="text-center">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Attribute</th>
+                </tr>
+            </thead>
+            <tbody id="cardTableBody" style="opacity: 0.6;">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        Dzul2024
+    </footer>
+
+    <script src="fetch.js"></script>
+</body>
+</html>
