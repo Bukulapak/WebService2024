@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .small-image {
+    max-width: 100%;
+    height: auto;
+    float: right; /* Menambahkan properti float */
+    margin-left: 50px; /* Menambahkan sedikit margin kiri agar tidak terlalu dekat dengan teks di sebelah kiri */
+  }
+  img.small-image {
+    max-width: 100px; /* Sesuaikan lebar maksimum sesuai kebutuhan Anda */
+    max-height: 100px; /* Sesuaikan tinggi maksimum sesuai kebutuhan Anda */
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    height: 100vh;
+    overflow:  hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  
