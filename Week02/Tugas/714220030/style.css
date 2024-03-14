@@ -1,0 +1,55 @@
+body {
+    background: url('https://images6.alphacoders.com/131/1313029.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align : center;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.table {
+    margin-top: 20px;
+    table-layout: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+thead {
+    background-color: rgba(0, 123, 255, 0.2); 
+    color: #ffffff;
+}
+
+th, td {
+    text-align: center;
+    word-wrap: break-word;
+    background-color: transparent; 
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(242, 242, 242, 0.5);
+}
+
+tbody tr:hover {
+    background-color: rgba(224, 247, 250, 0.5);
+}
