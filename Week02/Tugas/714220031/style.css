@@ -13,7 +13,7 @@ table {
     margin: 20px auto;
     border-collapse: collapse;
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
