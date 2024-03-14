@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME FILM</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <center><h1>FILM FINDER with Screenshoot</h1></center>
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Anilist</th>
+                            <th>File Name</th>
+                            <th>Episode</th>
+                            <th>Image</th> 
+                        </tr>
+                    </thead>
+                    <tbody id="film"> 
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        const requestOptions = {
+            method: "GET",
+            redirect: "follow"
+        };
+
+        fetch("https://api.trace.moe/search?anilistID=1&url=https://images.plurk.com/32B15UXxymfSMwKGTObY5e.jpg", requestOptions)
+            .then(response => response.json())
+            .then(result => tampilkan(result))
+            .catch(error => console.error(error));
+        
+        function tampilkan(result) {
+            var hasil = ""; 
+            console.log(result);
+
+            if (Array.isArray(result.result)) {
+                result.result.forEach(film => {
+                    hasil += "<tr>";
+                    hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'>"+ film.anilist +"</td>"; 
+                    hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'>"+ film.filename +"</td>"; 
+                    hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'>"+ film.episode +"</td>"; 
+                    hasil += "<td scope='col' class='px-6 py-4 font-medium text-gray-900'><img src='" + film.image + "' alt='Emoticon Image'></td>"; 
+                    hasil += "</tr>";
+                });
+            } else {
+                hasil = "<tr><td colspan='4' class='text-center'>No emoticon found</td></tr>";
+            }
+
+            document.getElementById("film").innerHTML = hasil; // Menggunakan ID "film"
+        }
+    </script>
+</body>
+</html>
