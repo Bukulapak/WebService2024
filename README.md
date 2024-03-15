@@ -1,6 +1,15 @@
 # Kuliah Web Service
 Materi Kuliah Web Service, akses github pages : https://bukulapak.github.io/WebService2024/
 
+## URL Cek Tugas (untuk NPM bisa diubah dengan NPM masing-masing)
+1. WEEK02 = https://bukulapak.github.io/WebService2024/Week02/Tugas/{NPM}/
+   
+## Pelakor
+Pelaku ubah atau delete file orang :
+|No.| NPM      | Nama | Commit |
+| ------ | ------ | ------ | ------ |
+|1.| 714220031 | Ghaida Fasya Yuthika Afifah | https://github.com/Bukulapak/WebService2024/commit/0c09b3ad28b3d6923a156fbef808e95714ff5e2a |
+
 # Pengenalan Tools
 Disini akan menggunakan tools Git Bash
 
