@@ -74,7 +74,7 @@ Disini kita akan membuka Postman untuk melakukan testing endpoint dahulu, dengan
   ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/a8fbcb9e-a32a-4f9d-b666-b23b159327be)
 * Cari element dari input dan buttonnya kemudian kita beri id
   ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/f6720026-a621-4e4d-b968-9814f7c95972)
-  ![image](https://github.com/indrariksa/ws2024test/assets/26703717/d9b6db50-fa76-41b6-98c5-c2d0f68440f6)
+  ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/c9816f17-604b-4375-9788-10054f9f34e4)
 * Buat file js kita masukkan dahulu javascript yang didapatkan dari postman ke js tersebut, kemudian panggil pada bagian bawah sebelum tag penutup body
 
   ![image](https://user-images.githubusercontent.com/26703717/222392397-900e8868-f866-46e4-b939-abaad852c444.png)
@@ -116,7 +116,7 @@ Pada bagian ini kita akan membuat fungsi-fungsi di javascript untuk mengirimkan 
 2. Pada line 20 isikan link pipe dream kalian
 
    ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/a4809473-09ce-4704-988d-5b9f47e57228)
-   ![image](https://github.com/indrariksa/ws2024test/assets/26703717/77062c0f-201f-42c0-b0aa-942870b6cbab)
+   ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/411c8e88-afbf-4c86-81b8-694ad3e903d2)
 
 3. Membuat fungsi PushButton() untuk melakukan aksi setelah menekan tombol, pada bagian html button tambahkan atribut onclick.
 
@@ -134,7 +134,7 @@ Pada bagian ini kita akan membuat fungsi-fungsi di javascript untuk mengirimkan 
    ![image](https://user-images.githubusercontent.com/26703717/222400423-db80721c-07df-412f-bee6-cd5928b76e98.png)
    ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/5ade8525-9813-40e0-aec2-ba01f87e595e)
 5. Kemudian kita lihat pada dashboard pipedream data sudah diterima dengan baik oleh endpoint baik itu header maupun body.
-   ![image](https://github.com/indrariksa/ws2024test/assets/26703717/44e023f3-0560-4c28-88df-5b35ddeacd78)
+   ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/838f4b6b-6b99-48ee-a496-1fe7b937dd17)
 
 ### Tambahan Estetika UX
 
@@ -155,7 +155,7 @@ Pasti merasa aneh bukan setelah menekan tombol, tapi tampilan tidak berubah sama
           document.getElementById("formsignup").innerHTML = result;
     }
   ```
-  ![image](https://github.com/indrariksa/ws2024test/assets/26703717/72c223a8-3247-41df-91cc-12029c5fba0a)
+  ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/93eadef9-f3a6-4422-ad9b-aaeebc104e8e)
 * Kita ujicoba dengan mengisi form dan klik tombol submit, maka form kita sudah berhasil.
   ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/725687af-a66a-42e8-a500-015266486c99)
   ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/419c0e6c-e335-42c7-bc43-cee0548fe7bf)
