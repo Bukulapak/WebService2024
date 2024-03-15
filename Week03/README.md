@@ -74,7 +74,7 @@ Disini kita akan membuka Postman untuk melakukan testing endpoint dahulu, dengan
   ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/a8fbcb9e-a32a-4f9d-b666-b23b159327be)
 * Cari element dari input dan buttonnya kemudian kita beri id
   ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/f6720026-a621-4e4d-b968-9814f7c95972)
-  ![image](https://github.com/indrariksa/ws2024test/assets/26703717/d9b6db50-fa76-41b6-98c5-c2d0f68440f6)
+  ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/c9816f17-604b-4375-9788-10054f9f34e4)
 * Buat file js kita masukkan dahulu javascript yang didapatkan dari postman ke js tersebut, kemudian panggil pada bagian bawah sebelum tag penutup body
 
   ![image](https://user-images.githubusercontent.com/26703717/222392397-900e8868-f866-46e4-b939-abaad852c444.png)
