@@ -45,7 +45,10 @@ function displayProfile(data) {
                     <h2 class="text-xl font-bold">${data.name}</h2>
                     <h5 class="text-sm text-zinc-400">@${data.login}</h5>
                     <div class="mt-1">
-                        <h5 class="text-xs text-zinc-400"><span class="text-white font-bold">${data.followers}</span> Followers • <span class="text-white font-bold">${data.following}</span> Following</h5>
+                        <h5 class="text-xs text-zinc-400">
+                        <a href="#followers">
+                            <span class="text-white font-bold">${data.followers}</span> Followers
+                        </a> • <span class="text-white font-bold">${data.following}</span> Following</h5>
                     </div>
                     <a href="https://github.com/${data.login}">
                         <button class="bg-zinc-800 hover:bg-zinc-700 text-white mt-3 py-1 px-4 rounded-full text-sm w-full">
@@ -106,4 +109,67 @@ function displayProfile(data) {
     tableBody.appendChild(card);
 }
 
-window.onload = getProfile;
+let currentPage = 1;
+const followersPerPage = 6;
+
+function getFollowers(page) {
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch(`https://api.github.com/users/herobuxx/followers?page=${page}&per_page=${followersPerPage}`, requestOptions)
+        .then(response => {
+            console.log('Raw Response:', response);
+            return response.json();
+        })
+        .then(data => {
+            if (Array.isArray(data)) {
+                displayFollowers(data);
+            } else {
+                console.error('API Error:', data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Fetch Error:', error);
+        });
+}
+
+function displayFollowers(data) {
+    const tableBody = document.getElementById('followers-data');
+    tableBody.innerHTML = '';
+
+    data.forEach(follower => {
+        const card = document.createElement('div');
+        card.innerHTML = `
+            <a href="${follower.html_url}">
+                <div class="px-2 py-2 bg-zinc-900 flex justify-center rounded-2xl py-2">
+                    <div class="block text-center">
+                        <img class="w-28 h-28 rounded-2xl" src="${follower.avatar_url}">
+                        <h2 class="pt-2">${follower.login}</h2>  
+                    </div>
+                </div>
+            </a>
+        `;
+        tableBody.appendChild(card);
+    });
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        getFollowers(currentPage);
+    }
+}
+
+function nextPage() {
+    currentPage++;
+    getFollowers(currentPage);
+}
+
+function initialize() {
+    getProfile();
+    getFollowers(currentPage);
+}
+
+window.onload = initialize;
