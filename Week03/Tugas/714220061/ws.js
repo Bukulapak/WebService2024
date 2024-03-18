@@ -25,14 +25,18 @@ function Signup(firstname, lastname, username, email, password) {
 }
 
 function GetResponse(result) {
-  document.getElementById("forms").innerHTML = "" + result + "<br>You will be redirected in 3 sec...";
-  setTimeout(function(){
+  document.getElementById("forms").innerHTML =
+    "" + result + "<br>You will be redirected in 3 sec...";
+  setTimeout(function () {
     window.location.reload();
-}, 3000);
+  }, 3000);
 }
 
 function GetError(error) {
   document.getElementById("forms").innerHTML = error;
+  setTimeout(function () {
+    window.location.reload();
+  }, 3000);
 }
 
 function signupNow() {
