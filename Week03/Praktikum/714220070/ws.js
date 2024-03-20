@@ -1,6 +1,16 @@
+function PushButton(){
+    namadepan=document.getElementById("namadepan").value;
+    namabelakang=document.getElementById("namabelakang").value;
+    email=document.getElementById("email").value;
+    password=document.getElementById("password").value;
+    PostSignUp(namadepan,namabelakang,email,password);
+}
+
+
+
 function PostSignUp(namadepan,namabelakang,email,password){
     var myHeaders = new Headers();
-    myHeaders.append("Login", "divacute");
+    myHeaders.append("Login", "chapter03");
     myHeaders.append("Content-Type", "application/json");
    
     var raw = JSON.stringify({
@@ -17,21 +27,13 @@ function PostSignUp(namadepan,namabelakang,email,password){
       redirect: 'follow'
     };
    
-    fetch("https://eo6zlnf1tx5w96y.m.pipedream.net", requestOptions)
+    fetch("https://eo6m8y56p8807jl.m.pipedream.net", requestOptions)
       .then(response => response.text())
       .then(result => GetResponse(result))
       .catch(error => console.log('error', error));
-
-
     }
-    function PushButton(){
-        namadepan=document.getElementById("namadepan").value;
-        namabelakang=document.getElementById("namabelakang").value;
-        email=document.getElementById("email").value;
-        password=document.getElementById("password").value;
-        PostSignUp(namadepan,namabelakang,email,password);
-  }
+    
+    function GetResponse(result){
+    document.getElementById("formsignup").innerHTML = result;
+}  
 
-  function GetResponse(result){
-    document.getElementById("formsignup").innerHTML = result
-}
