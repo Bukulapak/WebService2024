@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CDN untuk Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Sini Superhero</title>
+</head>
+<body>
+    <!-- Container -->
+    <div class="flex justify-center items-center min-h-screen bg-gray-200 py-10">
+  
+        <!-- Login component -->
+        <div class="flex shadow-md">
+            <!-- Login form -->
+            <div class="flex flex-wrap content-center justify-center rounded-l-md bg-black text-white" style="width: 24rem; height: 40rem;">
+                <div class="w-72">
+                    <!-- Heading -->
+                    <h1 class="text-xl font-semibold">Heyyo Pahlawan Super</h1>
+                    <small class="text-gray-400">Welcome back! sini masukin details mu</small>
+  
+                    <!-- Form -->
+                    <form class="mt-4" id="form-superhero">
+                        <div class="mb-3">
+                            <label class="mb-2 block text-xs font-semibold">Nama Superhero</label>
+                            <input type="text" id="nama-superhero" placeholder="Masukkan nama superhero Anda" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        </div>
+  
+                        <div class="mb-3">
+                            <label class="mb-2 block text-xs font-semibold">Kode Rahasia</label>
+                            <input type="password" id="kode-rahasia" placeholder="***" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="mb-2 block text-xs font-semibold">Gelar Kehormatan</label>
+                            <select id="gelar-kehormatan" name="gelar-kehoormatan" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500">
+                                <option value="mr">Mr.</option>
+                                <option value="ms">Ms.</option>
+                                <option value="mrs">Mrs.</option>
+                                <option value="captain">Captain</option>
+                                <option value="prof">Prof.</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="mb-2 block text-xs font-semibold">Kekuatan Utama</label>
+                            <div class="flex flex-wrap content-center">
+                                <input id="kekuatan1" name="kekuatan-utama" type="checkbox" class="mr-1 checked:bg-purple-700" value="Kecepatan" /> <label for="kekuatan1" class="mr-auto text-xs font-semibold">Kecepatan</label><br>
+                                <input id="kekuatan2" name="kekuatan-utama" type="checkbox" class="mr-1 checked:bg-purple-700" value="Kekuatan" /> <label for="kekuatan2" class="mr-auto text-xs font-semibold">Kekuatan</label><br>
+                                <input id="kekuatan3" name="kekuatan-utama" type="checkbox" class="mr-1 checked:bg-purple-700" value="Kemampuan Terbang" /> <label for="kekuatan3" class="mr-auto text-xs font-semibold">Kemampuan Terbang</label><br>
+                                
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="mb-2 block text-xs font-semibold">Pemberitahuan Melalui</label>
+                            <div class="flex flex-wrap content-center">
+                                <input type="radio" id="merpati" name="pemberitahuan" value="Merpati">
+                                <label for="merpati" class="mr-auto text-xs font-semibold">Merpati</label><br>
+                                <input type="radio" id="sinyal-api" name="pemberitahuan" value="Sinyal Api">
+                                <label for="sinyal-api" class="mr-auto text-xs font-semibold">Sinyal Api</label><br>
+                                <input type="radio" id="tulisan-awan" name="pemberitahuan" value="Tulisan di Awan">
+                                <label for="tulisan-awan" class="mr-auto text-xs font-semibold">Tulisan di Awan</label><br>
+                            </div>
+                        </div>
+  
+                        <div class="mb-3">
+                            <button type="button" onclick="GetSuperheroFormData()" class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Masuk</button>
+                        </div>
+                    </form>
+  
+                    <!-- Footer -->
+                    <div class="mt-3 w-full">
+                        <p class="text-center">Ketika Dunia Membutuhkan Pahlawan, Aku Akan Datang. <a target="_blank" href="https://www.instagram.com/_mhrndiva?igsh=cGdlbm9qZGU1bHk4" class="text-purple-700"></a></p>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Login banner -->
+            <div class="hidden md:block md:w-80 lg:w-96 bg-center bg-no-repeat bg-cover rounded-r-md" style="height: 40rem; background-image: url('https://i.pinimg.com/564x/62/c8/8c/62c88c13e1a650962f710deac6e8dd8b.jpg');"></div>
+        </div>
+    </div>
+    <script src="ws.js"></script>
+</body>
+</html>
