@@ -1,6 +1,6 @@
 function PostSignUp(namadepan,namabelakang,email,password){
     var myHeaders = new Headers();
-    myHeaders.append("Login", "chapter03");
+    myHeaders.append("Login", "divacute");
     myHeaders.append("Content-Type", "application/json");
    
     var raw = JSON.stringify({
@@ -17,7 +17,7 @@ function PostSignUp(namadepan,namabelakang,email,password){
       redirect: 'follow'
     };
    
-    fetch("https://eor1wiq10obvy4n.m.pipedream.net", requestOptions)
+    fetch("https://eo6zlnf1tx5w96y.m.pipedream.net", requestOptions)
       .then(response => response.text())
       .then(result => GetResponse(result))
       .catch(error => console.log('error', error));
