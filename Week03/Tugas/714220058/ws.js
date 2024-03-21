@@ -21,8 +21,12 @@ function PostSignUp(namadepan, namabelakang, email, password, number, belimenu) 
    
     fetch("https://eopz56f1hs28mrm.m.pipedream.net", requestOptions)
       .then(response => response.text())
-      .then(result => console.log(result))
+      .then(result => GetResponse(result))
       .catch(error => console.log('error', error));
+}
+
+function GetResponse(result){
+    document.getElementById("formsignup").innerHTML = result;
 }
 
 function PushButton() {
@@ -33,4 +37,6 @@ function PushButton() {
      number = document.getElementById("number").value;
      belimenu = document.getElementById("belimenu").value;
     PostSignUp(namadepan, namabelakang, email, password, number, belimenu);
+    document.getElementById("formsignup").style.display = 'none';
+    document.getElementById("formsignup").style.display = 'block';
 }
