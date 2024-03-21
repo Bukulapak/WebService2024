@@ -1,4 +1,4 @@
-function PostSignUp(namadepan,namabelakang,email,password){
+function PostSignUp(namalengkap,namadepan,tempattgllahir,alamat,notelphp,alamatorangtuawali,emailaddress,noTelpHP){
     var myHeaders = new Headers();
     myHeaders.append("Login", "chapter03");
     myHeaders.append("Content-Type", "application/json");
@@ -8,7 +8,7 @@ function PostSignUp(namadepan,namabelakang,email,password){
       "namapanggilan": namapanggilan,
       "tempattgllahir": tempattgllahir,
       "alamat": alamat,
-      "notelphp": no.telphp,
+      "notelphp": notelphp,
       "alamatorangtuawali": alamatorangtuawali,
       "emailaddress": emailaddress,
       "noTelpHP": noTelpHP
@@ -23,7 +23,7 @@ function PostSignUp(namadepan,namabelakang,email,password){
    
     fetch("https://eobh0ts7b6p4pfu.m.pipedream.net", requestOptions)
       .then(response => response.text())
-      .then(result => console.log(result))
+      .then(result => GetResponse.log(result))
       .catch(error => console.log('error', error));
     }
 
@@ -42,6 +42,3 @@ function PostSignUp(namadepan,namabelakang,email,password){
     noTelpHP=document.getElementById("noTelpHP").value;
     PostSignUp(namalengkap,namapanggilan,tempattgllahir,alamat,notelphp,alamatorangtuawali,emailaddress,noTelpHP);
 }
-
-    document.getElementById("formsignup").style.display = 'none';
-    document.getElementById("formsignup").style.display = 'block';
