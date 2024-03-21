@@ -1,4 +1,4 @@
-function PostSignUp(namadepan,namabelakang,email,password){
+function PostSignUp(namadepan,namabelakang,notlp,alamat,jeniskelas,jeniskelamin,tingkat){
   var myHeaders = new Headers();
   myHeaders.append("Login", "chapter03");
   myHeaders.append("Content-Type", "application/json");
@@ -9,6 +9,8 @@ function PostSignUp(namadepan,namabelakang,email,password){
     "notlp": notlp,
     "alamat": alamat,
     "jeniskelas": jeniskelas,
+    "jeniskelamin": jeniskelamin,
+    "tingkat": tingkat,
     //"tglPendaftaran": tglPendaftaran
   });
  
@@ -35,8 +37,10 @@ function PostSignUp(namadepan,namabelakang,email,password){
       notlp=document.getElementById("notlp").value;
       alamat=document.getElementById("alamat").value;
       booktitle=document.getElementById("jeniskelas").value;
-      //tglpinjam=document.getElementById("tglPendaftaran").value;
-      PostSignUp(namadepan,namabelakang,notlp,alamat,jeniskelas);
+      jeniskelamin=document.getElementById("jeniskelamin").value;
+      tingkat=document.getElementById("tingkat").value;
+      //tglpendaftaran=document.getElementById("tglPendaftaran").value;
+      PostSignUp(namadepan,namabelakang,notlp,alamat,jeniskelas,jeniskelamin,tingkat);
       document.getElementById("formsignup").style.display = 'none';
       document.getElementById("formsignup").style.display = 'block';
   }
