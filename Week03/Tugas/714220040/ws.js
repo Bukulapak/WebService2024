@@ -30,13 +30,12 @@ function PostSignUp(nama, email, no_telp, BirthDate, agama, alamat) {
   }
 
   function PushButton() {
-  var nama = document.getElementById("nama").value;
-  var email = document.getElementById("email").value;
-  var no_telp = document.getElementById("no_telp").value;
-  var BirthDate = document.getElementById("BirthDate").value;
-  var agama = document.getElementById("agama").value;
-  var alamat = document.getElementById("alamat").value;
-  
+  var nama=document.getElementById("nama").value;
+  var email=document.getElementById("email").value;
+  var no_telp=document.getElementById("no_telp").value;
+  var BirthDate=document.getElementById("BirthDate").value;
+  var agama=document.getElementById("agama").value;
+  var alamat=document.getElementById("alamat").value;
   PostSignUp(nama, email, no_telp, BirthDate, agama, alamat);
   }
 
