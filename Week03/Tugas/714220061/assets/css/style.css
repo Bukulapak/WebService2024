@@ -1,0 +1,13 @@
+.fimg {
+  background-image: url("assets/img/F76OHK6akAA9aPu.jpg");
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoyo-logo {
+  width: 150px;
+}

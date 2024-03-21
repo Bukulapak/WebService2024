@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cocktail API</title>
+<link rel = "stylesheet" href = "style.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <center>
+  <h1 class="my-4">Random Cocktails</h1>
+    </center>
+  
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Alcohoic</th>
+          <th>Glass</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody id="cocktailsTableBody">
+        
+      </tbody>
+    </table>
+  </div>
+
+  <div class="text-center mt-4">
+    <button class="btn btn-primary" onclick="generateCocktails()">Generate API</button>
+  </div>
+<br>
+</div>
+<script>
+  async function generateCocktails() {
+    const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
+    const data = await response.json();
+    const cocktails = data.drinks;
+    const tableBody = document.getElementById('cocktailsTableBody');
+    tableBody.innerHTML = '';
+    cocktails.forEach(cocktail => {
+      const row = `
+        <tr>
+<td>${cocktail.strDrink}</td>
+          <td>${cocktail.strCategory}</td>
+          <td>${cocktail.strAlcoholic}</td>
+          <td>${cocktail.strGlass}</td>
+          <td><img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}"></td>
+        </tr>
+      `;
+      tableBody.innerHTML += row;
+    });
+  }
+</script>
+</body>
+</html>
