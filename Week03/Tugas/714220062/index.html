@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -36,14 +36,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-200">
+<body class="bg-gray-500">
 
     <div class="min-w-screen min-h-screen bg-gray-900 flex items-center justify-center px-5 py-5">
         <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden" style="max-width:1000px">
             <div class="md:flex w-full">
-                <div class="hidden md:block w-1/2 bg-indigo-500 py-10 px-10">
-                    <svg id="a87032b8-5b37-4b7e-a4d9-4dbfbe394641" data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 744.84799 747.07702">
+                <div class="hidden md:block w-1/2 bg-gray-500 py-10 px-10">
+                    <img src="https://i.pinimg.com/564x/8d/f3/ec/8df3ecef8586827846a984459b33a4e8.jpg">
                         <path id="fa3b9e12-7275-481e-bee9-64fd9595a50d" data-name="Path 1"
                             d="M299.205,705.80851l-6.56-25.872a335.96693,335.96693,0,0,0-35.643-12.788l-.828,12.024-3.358-13.247c-15.021-4.29394-25.24-6.183-25.24-6.183s13.8,52.489,42.754,92.617l33.734,5.926-26.207,3.779a135.92592,135.92592,0,0,0,11.719,12.422c42.115,39.092,89.024,57.028,104.773,40.06s-5.625-62.412-47.74-101.5c-13.056-12.119-29.457-21.844-45.875-29.5Z"
                             transform="translate(-227.576 -76.46149)" fill="#f2f2f2" />
@@ -133,20 +132,36 @@
                                     <div
                                         class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                         <i class="mdi mdi-account-outline text-gray-400 text-lg"></i></div>
-                                    <input id="namadepan" type="text" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                                        placeholder="John">
+                                    <input id ="firstname" type="text"
+                                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                                        placeholder="Anda">
                                 </div>
                             </div>
                             <div class="w-1/2 px-3 mb-5">
                                 <label for="" class="text-xs font-semibold px-1">Last name</label>
                                 <div class="flex">
-                                    <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                                    <div
+                                        class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                         <i class="mdi mdi-account-outline text-gray-400 text-lg"></i></div>
-                                    <input id="namabelakang" type="text" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                                        placeholder="Smith">
+                                    <input id = "lastname" type="text"
+                                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                                        placeholder="Kamu">
                                 </div>
                             </div>
                         </div>
+                        <div class="flex -mx-3">
+                            <div class="w-full px-3 mb-5">
+                                <label for="" class="text-xs font-semibold px-1">Username</label>
+                                <div class="flex">
+                                    <div
+                                        class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                                        <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
+                                    <input id ="username" type="text" 
+                                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                                        placeholder="Hayya">
+                                </div>
+                            </div>
+                        </div>  
                         <div class="flex -mx-3">
                             <div class="w-full px-3 mb-5">
                                 <label for="" class="text-xs font-semibold px-1">Email</label>
@@ -154,11 +169,12 @@
                                     <div
                                         class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                         <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
-                                    <input id="email" type="email" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                                        placeholder="johnsmith@example.com">
+                                    <input id ="email" type="email" 
+                                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                                        placeholder="genjishimada@example.com">
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                         <div class="flex -mx-3">
                             <div class="w-full px-3 mb-12">
                                 <label for="" class="text-xs font-semibold px-1">Password</label>
@@ -166,7 +182,7 @@
                                     <div
                                         class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                         <i class="mdi mdi-lock-outline text-gray-400 text-lg"></i></div>
-                                    <input id="password" type="password"
+                                    <input id ="password" type="password"
                                         class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                                         placeholder="************">
                                 </div>
@@ -174,8 +190,7 @@
                         </div>
                         <div class="flex -mx-3">
                             <div class="w-full px-3 mb-5">
-                                <button onclick="PushButton()" id="tombol"
-                                    class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">REGISTER
+                                <button  onclick="PushButton()" id="tombol" type="button" class="block w-full max-w-xs mx-auto bg-black-500 hover:bg-gray-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">REGISTER
                                     NOW</button>
                             </div>
                         </div>
@@ -184,6 +199,7 @@
             </div>
         </div>
     </div>
-<script src="ws.js"></script>
+    <script src="ws.js"></script>
 </body>
+
 </html>
