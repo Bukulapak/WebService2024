@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANTIN KAMPOES.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: visible;
+          }
+        }
+    </style>
+</head>
+<body>
+<!-- component -->
+<div class="flex justify-center items-center bg-white">
+	<div class="container mx my-4 px-4 ">
+
+		<div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+			<div class="flex">
+			  <h1 class="font-bold uppercase text-5xl">
+          LET'S ORDER <br /> ON 
+          <span class="text-yellow-500">KANTIN</span>
+          <span class="text-yellow-500"> KAMPOES</span>.
+      </h1>
+			</div>
+			<div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+        <input id="namadepan" class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        type="text" placeholder="FIRST NAME*" />
+				<input id="namabelakang" class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        type="text" placeholder="LAST NAME*" />
+				<input id="email" class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        type="email" placeholder="EMAIL*" />
+        <input id="password" class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        type="password" placeholder="*******" />
+        <input id="number" class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        type="number" placeholder="Amount to purchase*" />
+        </div>
+				<input id="belimenu" class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        type="text" placeholder="What do you want to order?" />
+				<div class="my-2 w-1/2 lg:w-1/4">
+
+          <button onclick="PushButton()" id="tombol"
+          class="block w-full max-w-xs mx-auto bg-indigo-700 hover:bg-black focus:bg-yellow-700 text-white rounded-lg px-3 py-3 font-semibold">ORDER NOW</button>
+          </button>
+				</div>
+			</div>
+
+			<div
+				class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-white rounded-2xl">
+				<div class="flex flex-col text-black">
+					<h1 class="font-bold uppercase text-4xl my-4 text-yellow-500">KANTIN KAMPOES.</h1>
+					<p class="text-gray-400flex-col italic ">It started with Muhammad Qinthar, a student at the University of Logistics and International Business, concerned about the condition of the canteen on his campus. He saw that many canteens were unhygienic, the food was unhealthy, and the prices were expensive. This inspired him to create better solutions for students.
+					</p>
+
+					<div class="flex my-4 w-2/3 lg:w-1/2">
+						<div class="flex flex-col">
+							<i class="fas fa-map-marker-alt pt-2 pr-2" />
+            </div>
+            <div class="flex flex-col">
+              <h2 class="text-2xl font-bold uppercase ">Main office</h2>
+              <p class="text--400">Garut, Indonesia</p>
+            </div>
+          </div>
+          
+          <div class="flex my-4 w-2/3 lg:w-1/2">
+            <div class="flex flex-col">
+              <i class="fas fa-phone-alt pt-2 pr-2" />
+            </div>
+            <div class="flex flex-col">
+              <h2 class="text-2xl font-bold uppercase ">About Us</h2>
+            </div>
+          </div>
+          
+          <div class="flex my-4 w-2/3 lg:w-1/2">
+            <a href="https://www.instagram.com/qintharalmaliki/" target="_blank" rel="noreferrer" class="rounded-full bg-black h-8 w-8 inline-block mx-1 text-center pt-1">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- COMPONENT CODE -->
+</div>
+      
+<!-- untuk menu -->
+<div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+  <div>
+    <a title="Menu Kantin Kampoes." href="https://img.freepik.com/free-psd/special-food-menu-restaurant-poster-template_47987-16772.jpg?t=st=1711013810~exp=1711017410~hmac=47c93f14c8238cab6a593179e3c011a2004a319798a84371e6e57bd55371cb43&w=360  " target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12 bg-indigo-500">
+    </a>
+  </div>
+</div>
+
+<script src="ws.js"></script>
+</body>
+</html>
