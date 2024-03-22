@@ -3,6 +3,7 @@ Materi Kuliah Web Service, akses github pages : https://bukulapak.github.io/WebS
 
 ## URL Cek Tugas (untuk NPM bisa diubah dengan NPM masing-masing)
 1. WEEK02 = https://bukulapak.github.io/WebService2024/Week02/Tugas/{NPM}/
+2. WEEK03 = https://bukulapak.github.io/WebService2024/Week03/Tugas/{NPM}/
    
 ## Pelakor
 Pelaku ubah atau delete file orang :
