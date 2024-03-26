@@ -2,10 +2,6 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/golang/snappy v0.0.1 h1:Qgr9rKW7uDUkrbSmQeiDsGa8SjGyCOGtuasMWwvp2P4=
 github.com/golang/snappy v0.0.1/go.mod h1:/XxbfmMg8lxefKM7IXC3fBNl/7bRcc72aCRzEWrmP2Q=
 github.com/google/go-cmp v0.5.2 h1:X2ev0eStA3AbceY54o37/0PQ/UWqKEiiO2dKL5OPaFM=
-github.com/hrisz/kwetiau v0.0.1 h1:oFuAyyJLMMRXsm4FlKLIJdM8+OD7/kqQXH2D7+a7zEs=
-github.com/hrisz/kwetiau v0.0.1/go.mod h1:koS96f4AWwiJW2/o0JP+JgLFcTdZ+ZpFjY11pBKY3J0=
-github.com/hrisz/kwetiau v0.0.2 h1:B8Pv6M1BN8vWeROfjqQUE8SawNqScGmd0LVQj5XCTBw=
-github.com/hrisz/kwetiau v0.0.2/go.mod h1:koS96f4AWwiJW2/o0JP+JgLFcTdZ+ZpFjY11pBKY3J0=
 github.com/klauspost/compress v1.13.6 h1:P76CopJELS0TiO2mebmnzgWaajssP/EszplttgQxcgc=
 github.com/klauspost/compress v1.13.6/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=
 github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe h1:iruDEfMl2E6fbMZ9s0scYfZQ84/6SPL6zC8ACM2oIL0=
