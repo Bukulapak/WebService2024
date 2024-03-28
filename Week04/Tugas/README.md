@@ -39,11 +39,11 @@ Sebelumnya pilih dahulu studi kasus pembuatan tema yang akan dibuat. Setiap oran
 # Kerjakan
 
 - Buatlah database MongoDB.
-- Buatlah struct (minimal 3), package golang yang berisi file testing (setiap struct minimal terdapat 1 fungsi get data dan 1 fungsi insert data), dan publish package mengakses basis data yang sudah dibuat sebelumnya simpan di folder Week04/Tugas/{NPM masing-masing}
+- Buatlah repo baru di profle masing-masing yang berisi struct (minimal 3), package golang yang berisi file testing (setiap struct minimal terdapat 1 fungsi get data dan 1 fungsi insert data), dan publish package mengakses basis data yang sudah dibuat sebelumnya simpan url repo yang sudah dibuat(dimasukkan ke README.md) ke dalam folder Week04/Tugas/{NPM masing-masing}
 - Pull Request dengan Judul : 4-KELAS-NPM-NAMA menyertakan:
+    - URL Repo (Golang) yang sudah mempunyai tag dan telah dilisting
     - URL [pkg.go.dev](https://pkg.go.dev/), beserta skrinsutan
     - Skrinsutan isi MongoDB dari Mongo Compass yang sudah berisi data kasus
-    - File dalam folder Week04/Tugas/{NPM masing-masing} yang sudah release versi awal di pkg.go.dev
 
 -----
 # UNTUK PRAKTIKUM MINGGU DEPAN
