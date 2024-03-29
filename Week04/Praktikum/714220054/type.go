@@ -5,11 +5,11 @@ import (
 )
 
 type Karyawan struct {
-	ID           primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"` //primitive itu nomornya random
+	ID           primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
 	Nama         string             `bson:"nama,omitempty" json:"nama,omitempty"`
 	Phone_number string             `bson:"phone_number,omitempty" json:"phone_number,omitempty"`
 	Jabatan      string             `bson:"jabatan,omitempty" json:"jabatan,omitempty"`
-	Jam_kerja    []JamKerja         `bson:"jam_kerja,omitempty" json:"jam_kerja,omitempty"` //[] array dari tabel jam kerja
+	Jam_kerja    []JamKerja         `bson:"jam_kerja,omitempty" json:"jam_kerja,omitempty"`
 	Hari_kerja   []string           `bson:"hari_kerja,omitempty" json:"hari_kerja,omitempty"`
 }
 
@@ -31,5 +31,5 @@ type Presensi struct {
 	Phone_number string             `bson:"phone_number,omitempty" json:"phone_number,omitempty"`
 	Datetime     primitive.DateTime `bson:"datetime,omitempty" json:"datetime,omitempty"`
 	Checkin      string             `bson:"checkin,omitempty" json:"checkin,omitempty"`
-	Biodata      Karyawan           `bson:"biodata,omitempty" json:"biodata,omitempty"` //objek dari karyawan diatas
+	Biodata      Karyawan           `bson:"biodata,omitempty" json:"biodata,omitempty"`
 }
