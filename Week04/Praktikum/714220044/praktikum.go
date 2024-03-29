@@ -65,5 +65,3 @@ func GetAllPresensi() (data []Presensi) {
 	}
 	return
 }
-
-///Test Gehu Bro
