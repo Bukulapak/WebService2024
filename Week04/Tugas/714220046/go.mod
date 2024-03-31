@@ -1,6 +1,6 @@
-module github.com/deviwlndr/WebService2024/Week04/Praktikum/714220054
+module github.com/gryzlegrizz/WebService2024/Week04/Tugas/714220046
 
-go 1.20
+go 1.22
 
 require go.mongodb.org/mongo-driver v1.14.0
 
