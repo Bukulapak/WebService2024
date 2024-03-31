@@ -1,4 +1,4 @@
-module github.com/deviwlndr/WebService2024/Week04/Praktikum/714220054
+module github.com/deviwlndr/WebService2024/Week04/Tugas/714220054
 
 go 1.20
 
