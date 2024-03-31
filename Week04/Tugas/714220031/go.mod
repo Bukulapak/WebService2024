@@ -1,4 +1,4 @@
-module github.com/ghaidafasya24/WebService2024/Week04/Praktikum/714220031
+module github.com/ghaidafasya24/WebService2024/Week04/Tugas/714220031
 
 go 1.20
 
