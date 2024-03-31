@@ -65,7 +65,3 @@ func GetAllPresensi() (data []Presensi) {
 	}
 	return
 }
-
-//TEST
-
-
