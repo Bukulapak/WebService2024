@@ -187,9 +187,9 @@ Pada pertemuan sebelumnya. Package yang sudah dibuat bisa kita panggil di contro
 2. Buat fungsi di file coba.go
    ```go
     func GetPresensi(c *fiber.Ctx) error {
-	ps := cek.GetAllPresensi()
+	ps := cek.GetAllPresensi(config.Ulbimongoconn, "presensi")
 	return c.JSON(ps)
-    }
+	}
    ```
    dan juga menambah import di atasnya
    ```go
