@@ -70,9 +70,6 @@ Masalah selesai dengan mengganti import menuju direktori awal kita melakukan go 
 
 ![image](https://github.com/Bukulapak/WebService2024/assets/26703717/9f064827-0aca-4cdc-bdfa-d9329104c838)
 
-Jika terdapat error pada controller.go line 22 ubah RunModule menjadi RunModuleLegacy
-![image](https://user-images.githubusercontent.com/26703717/225715134-58dc071b-f169-41f7-ae90-d2785c0c4901.png)
-
 Sebelum melakukan push kita cek dulu apakah remote kita sudah sesuai (mengarah ke repositori github kita dan heroku dengan nama app ws-indra2024)
 ```sh
 git remote -v
