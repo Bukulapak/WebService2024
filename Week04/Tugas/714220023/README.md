@@ -1,3 +1,3 @@
 https://github.com/serlip06/pointsalesofkantin 
 
-(link package di pkg.go.dev belum muncul)
+https://pkg.go.dev/github.com/serlip06/pointsalesofkantin
