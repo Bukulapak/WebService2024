@@ -1,3 +1,5 @@
+Link repo :
 https://github.com/ghaidafasya24/Kuisoner
 
-(package di pkg.go.dev belum muncul)
+Link package :
+https://pkg.go.dev/github.com/ghaidafasya24/Kuisoner
