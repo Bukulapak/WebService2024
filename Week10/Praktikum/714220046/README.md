@@ -1,4 +1,7 @@
-### Screenshot:
+## Screenshot:
 ![Screenshot Hasil](ScreenshotHasil.png)
 <br>
-Github: https://gryzlegrizz.github.io/fe-praktekws/template/index0.html
+## Link:
+Github: https://gryzlegrizz.github.io/fe-praktekws/template/index.html
+<br>
+Heroku: https://git.heroku.com/ws-gilang2024.git
