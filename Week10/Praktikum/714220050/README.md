@@ -1,0 +1,1 @@
+https://mhrndiva.github.io/fe_diva2024/template/index.html
