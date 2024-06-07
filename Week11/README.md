@@ -100,7 +100,7 @@ func TestDeletePresensiByID(t *testing.T) {
 		t.Fatalf("error converting id to ObjectID: %v", err)
 	}
 
-	err = cek.DeletePresensiByID(objectID, module.MongoConn, "presensi")
+	err = module.DeletePresensiByID(objectID, module.MongoConn, "presensi")
 	if err != nil {
 		t.Fatalf("error calling DeletePresensiByID: %v", err)
 	}
