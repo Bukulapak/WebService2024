@@ -215,7 +215,7 @@ Jika berhasil, kalian akan melihat 3 file yang terupdate di dalam folder docs. F
     // @Success 200 {object} Presensi
     // @Failure 400
     // @Failure 500
-    // @Router /ins [post]
+    // @Router /insert [post]
     ```
 
     > Anotasi Swagger pada kode di atas adalah sebagai berikut:
